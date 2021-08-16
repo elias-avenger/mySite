@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<title>Tech-Makers</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body{
+				background-color:#ddfdfe;
+				color: #00335a;
+				font-family: "SolidWorks GDT";
+				margin: 0px;
+			}
+			header{
+				position:fixed;
+			  top:0;
+			  left:0;
+				right:0;
+			  height:60px;
+			  padding:0px 20px 0px;
+				background-color:#ffffff;
+				display: flex;
+				flex-direction: row;
+				z-index: 1;
+			}
+			header nav{
+				position: absolute;
+				top: 40%;
+			}
+			nav a{
+				text-decoration: none;
+				padding: 5px;
+				background-color: #00335a;
+				color: #ffffff;
+				border-radius: 5px;
+			}
+			nav a:hover{
+				color: #ddfdfe;
+			}
+			nav #menu-img{
+				display: none;
+			}
+			#logo{
+				position: relative;
+				left: 50%;
+				height:100%;
+			}
+			.drop-menu{
+				display: none;
+				margin-top: 60px;
+				//width: 100%;
+			}
+			.drop-menu ul{
+				background-color: #00335a;
+				padding: 1px;
+			}
+			.drop-menu li{
+				color: #fff;
+				border-bottom: 1px #fff solid;
+				margin: 2px;
+			}
+			.drop-menu a{
+				text-decoration: none;
+				color: #fff;
+				padding: 10px 5px 10px;
+				width: 100%;
+			}
+			.main-div{
+				position: relative;
+				margin: auto;
+				max-width: 1100px;
+				margin-top: 60px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+			.content-div{
+				//background-color: #aaaaaa;
+				width: 70%;
+			}
+			.content-div img{
+				max-width: 100%;
+			}
+			.side-panel{
+				top: 60px;
+				width: 25%;
+			}
+		</style>
+	</head>
+	<body>
+		<header id="header">
+			<nav>
+				<img src="menu.png" alt="" style="height: 20px;" id="menu-img">
+				<a href="#">Home</a>
+				<a href="#">About-us</a>
+				<a href="#">projectx</a>
+			</nav>
+			<img src="logo.png" id="logo">
+		</header>
+		<div class="drop-menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About-us</a></li>
+				<li><a href="#">projectx</a></li>
+			</ul>
+		</div>
+		<div class="main-div">
+			<div class="content-div">
+				<img src="printing.jpg" alt="3D printing">
+				<img src="accessibility.jpg" alt="3D printing">
+			</div>
+			<div class="side-panel" data-top="60">
+				<h1>Our contacts:</h1>
+				<hr>
+				<p><img src="mail-icon.png" alt="mail-icon" style="width:50px;"> support@tech-makers.com</p>
+				<p><img src="phone-icon.png" alt="call-icon" style="width:50px;"> +256 775 125132</p>
+				<hr>
+				<p><img src="facebook-icon.png" alt="facebook-icon" style="width:50px;"> visit our facebook page</p>
+				<p><img src="twitter-icon.png" alt="twitter-icon" style="width:50px;"> get us on twitter</p>
+			</div>
+		</div>
+	</body>
+</html>
