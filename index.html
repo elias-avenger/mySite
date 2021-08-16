@@ -5,11 +5,14 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/responsive.css">
 	</head>
 	<body>
 		<header id="header">
 			<nav>
-				<img src="images/menu.png" alt="" style="height: 20px;" id="menu-img">
+				<a href="javascript:void(0);" class="icon" id="menu-img" onclick="myFunction()">
+					<img src="images/menu.png" alt="" style="height: 20px;" >
+				</a>
 				<a href="#">Home</a>
 				<a href="#">About-us</a>
 				<a href="#">projectx</a>
@@ -38,5 +41,16 @@
 				<p><img src="images/twitter-icon.png" alt="twitter-icon" style="width:50px;"> get us on twitter</p>
 			</div>
 		</div>
+		<script type="text/javascript">
+		function myFunction() {
+			let x = document.getElementByClassName("drop-menu");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+		</script>
+		</script>
 	</body>
 </html>

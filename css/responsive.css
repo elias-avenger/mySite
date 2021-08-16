@@ -1,0 +1,39 @@
+@media(max-width: 800px) {
+  .main-div{
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .side-panel{
+    position: static;
+    width: 100%;
+  }
+  .contact {
+    display: none;
+  }
+  .content-div{
+    /* background-color: #aaaaaa; */
+    width: 100%;
+  }
+  nav a{
+    display: none;
+    text-decoration: none;
+    padding: 5px;
+    background-color: inherit;
+    color: #ffffff;
+    border-radius: 5px;
+  }
+  nav #menu-img{
+    display: block;
+  }
+  #logo{
+    position: relative;
+    left: 50%;
+    height:100%;
+  }
+  .drop-menu{
+    /* display:none; */
+    margin-top: 60px;
+    //width: 100%;
+  }
+
+}

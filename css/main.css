@@ -81,15 +81,3 @@ nav #menu-img{
   margin: auto;
   right: 1px;
 }
-
-@media(max-width: 480px) {
-  .main-div{
-    flex-direction: column;
-  }
-  .side-panel{
-    position: static;
-  }
-  .contact {
-    display: none;
-  }
-}
