@@ -68,13 +68,28 @@ nav #menu-img{
   justify-content: space-between;
 }
 .content-div{
-  //background-color: #aaaaaa;
+  /* background-color: #aaaaaa; */
   width: 70%;
 }
 .content-div img{
   max-width: 100%;
 }
 .side-panel{
+  position: fixed;
   top: 60px;
   width: 25%;
+  margin: auto;
+  right: 1px;
+}
+
+@media(max-width: 480px) {
+  .main-div{
+    flex-direction: column;
+  }
+  .side-panel{
+    position: static;
+  }
+  .contact {
+    display: none;
+  }
 }
