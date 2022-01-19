@@ -1,5 +1,5 @@
 function myFunction() {
-  let x = document.getElementByClassName("drop-menu");
+  let x = document.getElementById("r-menu");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {

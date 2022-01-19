@@ -81,3 +81,19 @@ nav #menu-img{
   margin: auto;
   right: 1px;
 }
+.bottom-panel{
+  position: fixed;
+  bottom: 10px;
+  width: 95%;
+  margin: auto;
+  left: 1%;
+  padding: 0px 15px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #CCCCCC;
+  display: none;
+}
+.bottom-panel a{
+  padding-left: 15px;
+}

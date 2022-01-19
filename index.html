@@ -10,7 +10,7 @@
 	<body>
 		<header id="header">
 			<nav>
-				<a href="javascript:void(0);" class="icon" id="menu-img" onclick="myFunction()">
+				<a href="javascript:void(0);" id="menu-img" onclick="myFunction()">
 					<img src="images/menu.png" alt="" style="height: 20px;" >
 				</a>
 				<a href="#">Home</a>
@@ -19,7 +19,7 @@
 			</nav>
 			<img src="images/logo.png" id="logo">
 		</header>
-		<div class="drop-menu">
+		<div class="drop-menu" id="r-menu">
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About-us</a></li>
@@ -34,22 +34,38 @@
 			<div class="side-panel" data-top="60">
 				<h1 class="contact">Our contacts:</h1>
 				<hr>
-				<p><img src="images/mail-icon.png" alt="mail-icon" style="width:50px;"> support@tech-makers.com</p>
-				<p><img src="images/phone-icon.png" alt="call-icon" style="width:50px;"> +256 775 125132</p>
+				<p class="specific-contact">
+					<img src="images/mail-icon.png" alt="mail-icon" style="width:50px;">
+					support@tech-makers.com
+				</p>
+				<p class="specific-contact">
+					<img src="images/phone-icon.png" alt="call-icon" style="width:50px;">
+					+256 775 125132
+				</p>
 				<hr>
-				<p><img src="images/facebook-icon.png" alt="facebook-icon" style="width:50px;"> visit our facebook page</p>
-				<p><img src="images/twitter-icon.png" alt="twitter-icon" style="width:50px;"> get us on twitter</p>
+				<p class="specific-contact">
+					<img src="images/facebook-icon.png" alt="facebook-icon" style="width:50px;">
+					visit our facebook page
+				</p>
+				<p class="specific-contact">
+					<img src="images/twitter-icon.png" alt="twitter-icon" style="width:50px;">
+					get us on twitter
+				</p>
+			</div>
+			<div class="bottom-panel">
+				<img src="images/mail-icon.png" alt="mail-icon" style="width:50px;">
+				support@tech-makers.com
+				<img src="images/phone-icon.png" alt="call-icon" style="width:50px;">
+				+256 775 125132
+				<a href="#">
+					<img src="images/facebook-icon.png" alt="facebook-icon" style="width:50px;">
+				</a>
+				<a href="#">
+					<img src="images/twitter-icon.png" alt="twitter-icon" style="width:50px;">
+				</a>
 			</div>
 		</div>
-		<script type="text/javascript">
-		function myFunction() {
-			let x = document.getElementByClassName("drop-menu");
-			if (x.style.display === "block") {
-				x.style.display = "none";
-			} else {
-				x.style.display = "block";
-			}
-		}
+		<script type="text/javascript" src="js/menuResponsive.js">
 		</script>
 		</script>
 	</body>

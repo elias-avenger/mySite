@@ -4,12 +4,11 @@
     flex-direction: column;
   }
   .side-panel{
-    position: static;
-    width: 100%;
-  }
-  .contact {
     display: none;
   }
+  /* .contact {
+    display: none;
+  } */
   .content-div{
     /* background-color: #aaaaaa; */
     width: 100%;
@@ -35,5 +34,17 @@
     margin-top: 60px;
     //width: 100%;
   }
-
+  .bottom-panel{
+    display: block;
+    font-size: 2.8vw;
+  }
+}
+@media(max-width:650px) {
+  .bottom-panel{
+    width: 100%;
+    /* font-size: 5px; */
+  }
+  .bottom-panel img{
+    width: 10px;
+  }
 }
