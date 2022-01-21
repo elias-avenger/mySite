@@ -37,14 +37,20 @@
   .bottom-panel{
     display: block;
     font-size: 2.8vw;
-  }
-}
-@media(max-width:650px) {
-  .bottom-panel{
     width: 100%;
-    /* font-size: 5px; */
+    justify-content: space-between;
   }
   .bottom-panel img{
-    width: 10px;
+    width: 30px;
+  }
+}
+@media(max-width:520px) {
+  .bottom-panel img{
+    width: 20px;
+  }
+}
+@media(max-width:390px) {
+  .bottom-panel img{
+    width: 12px;
   }
 }

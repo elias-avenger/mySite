@@ -66,6 +66,7 @@ nav #menu-img{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* background-color: #aaaaff; */
 }
 .content-div{
   /* background-color: #aaaaaa; */
@@ -73,6 +74,18 @@ nav #menu-img{
 }
 .content-div img{
   max-width: 100%;
+}
+.item-div{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+}
+#printing{
+  background-image: url("../images/printing.JPG");
+}
+#accessibility{
+  background-image: url("../images/accessibility.JPG");
 }
 .side-panel{
   position: fixed;
@@ -84,16 +97,16 @@ nav #menu-img{
 .bottom-panel{
   position: fixed;
   bottom: 10px;
-  width: 95%;
+  width: 100%;
   margin: auto;
-  left: 1%;
+  left: 0px;
   padding: 0px 15px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   background-color: #CCCCCC;
   display: none;
 }
 .bottom-panel a{
   padding-left: 15px;
+}
+.bottom-panel img{
+  width:50px;
 }
