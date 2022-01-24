@@ -5,18 +5,21 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/responsive.css">
 	</head>
 	<body>
 		<header id="header">
 			<nav>
-				<img src="images/menu.png" alt="" style="height: 20px;" id="menu-img">
+				<a href="javascript:void(0);" id="menu-img" onclick="myFunction()">
+					<img src="images/menu.png" alt="" style="height: 20px;" >
+				</a>
 				<a href="#">Home</a>
 				<a href="#">About-us</a>
 				<a href="#">projectx</a>
 			</nav>
 			<img src="images/logo.png" id="logo">
 		</header>
-		<div class="drop-menu">
+		<div class="drop-menu" id="r-menu">
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About-us</a></li>
@@ -25,18 +28,67 @@
 		</div>
 		<div class="main-div">
 			<div class="content-div">
-				<img src="images/printing.jpg" alt="3D printing">
-				<img src="images/accessibility.jpg" alt="3D printing">
+				<div class="item-div" id="printing">
+					<!-- <img src="images/printing.JPG" alt="3D printing"> -->
+					<h1>
+						3D printing
+					</h1>
+					<ul>
+						<li>We help turn your into a tangible product.</li>
+						<li>We 3D print PLA, ABS, PETG, TPU, PA, ...</li>
+					</ul>
+				</div>
+				<div class="item-div" id="accessibility">
+					<!-- <img src="images/accessibility.JPG" alt="3D printing"> -->
+					<div class="before">
+						<p>
+							<h1>
+								3D printing for solutions
+							</h1>
+							<ul>
+								<li>Creating models to make Sceince and Maths concepts accessible to the bilnd and visually impaired</li>
+								<li>Teachers often struggle to explain these concepts that are usualy elaborated to the sighted using diagrams among other notations to the blind and visually impaired, ...</li>
+							</ul>
+						</p>
+					</div>
+				</div>
 			</div>
 			<div class="side-panel" data-top="60">
-				<h1>Our contacts:</h1>
+				<h1 class="contact">Our contacts:</h1>
 				<hr>
-				<p><img src="images/mail-icon.png" alt="mail-icon" style="width:50px;"> support@tech-makers.com</p>
-				<p><img src="images/phone-icon.png" alt="call-icon" style="width:50px;"> +256 775 125132</p>
+				<p class="specific-contact">
+					<img src="images/mail-icon.png" alt="mail-icon" style="width:50px;">
+					support@tech-makers.com
+				</p>
+				<p class="specific-contact">
+					<img src="images/phone-icon.png" alt="call-icon" style="width:50px;">
+					+256 775 125132
+				</p>
 				<hr>
-				<p><img src="images/facebook-icon.png" alt="facebook-icon" style="width:50px;"> visit our facebook page</p>
-				<p><img src="images/twitter-icon.png" alt="twitter-icon" style="width:50px;"> get us on twitter</p>
+				<p class="specific-contact">
+					<img src="images/facebook-icon.png" alt="facebook-icon" style="width:50px;">
+					visit our facebook page
+				</p>
+				<p class="specific-contact">
+					<img src="images/twitter-icon.png" alt="twitter-icon" style="width:50px;">
+					get us on twitter
+				</p>
+			</div>
+			<div class="bottom-panel">
+				<img src="images/mail-icon.png" alt="mail-icon">
+				support@tech-makers.com
+				<img src="images/phone-icon.png" alt="call-icon">
+				+256 775 125132
+				<a href="#">
+					<img src="images/facebook-icon.png" alt="facebook-icon">
+				</a>
+				<a href="#">
+					<img src="images/twitter-icon.png" alt="twitter-icon">
+				</a>
 			</div>
 		</div>
+		<script type="text/javascript" src="js/menuResponsive.js">
+		</script>
+		</script>
 	</body>
 </html>
