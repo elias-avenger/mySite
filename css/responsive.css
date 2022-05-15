@@ -48,6 +48,9 @@
   .bottom-panel img{
     width: 20px;
   }
+  .main-div{
+    margin-top: 0px;
+  }
 }
 @media(max-width:390px) {
   .bottom-panel img{
